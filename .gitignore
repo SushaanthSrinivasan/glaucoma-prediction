@@ -1,0 +1,7 @@
+/Siamese Neural Network/siamesemodel_vgg_custom_200+300+200_SGD_1e-2_m0.9_binary.h5
+/Pre-trained model/VGG19_weights.h5
+/Pre-trained model/model.json
+/web-app/backend/models/siamesemodel_vgg_custom_200_SGD_1e-2_m0.9_binary.h5
+/web-app/backend/models/unet_segmentation_model.h5
+/web-app/backend/models/VGG19_model.json
+/web-app/backend/models/VGG19_weights.h5

@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>Report</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f0f0f0;
+			}
+			h1 {
+				text-align: center;
+			}
+			table {
+				border-collapse: collapse;
+				width: 100%;
+			}
+			th,
+			td {
+				border: 1px solid black;
+				padding: 8px;
+				text-align: left;
+			}
+			th {
+				background-color: #f2f2f2;
+			}
+			img {
+				max-width: 100%;
+				display: block;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Eye Health Report</h1>
+		<table>
+			<tr>
+				<th>Patient Name</th>
+				<td>{{patient_name}}</td>
+			</tr>
+			<tr>
+				<th>Scan Date</th>
+				<td>{{date}}</td>
+			</tr>
+			<tr>
+				<th>Scan Type</th>
+				<td>OCT and Fundus image</td>
+			</tr>
+			<tr>
+				<th>Radiologist</th>
+				<td>{{radiologist}}</td>
+			</tr>
+			<tr>
+				<th>Glaucoma probability from OCT:</th>
+				<td>{{oct_prob}}%</td>
+			</tr>
+			<tr>
+				<th>Glaucoma probability from fundus:</th>
+				<td>{{fundus_prob}}%</td>
+			</tr>
+			<tr>
+				<th>Glaucoma probability weighted average:</th>
+				<td>{{weighted_avg_prob}}%</td>
+			</tr>
+			<tr>
+				<th>OCT image of patient</th>
+				<td><img src={{"data:image/png;base64," + oct_path}}></td>
+			</tr>
+			<tr>
+				<th>Fundus image of patient</th>
+				<td>
+					<img src={{"data:image/png;base64," + fundus_path}} width="125">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
