@@ -1,4 +1,21 @@
-# Glaucoma Prediction
+# Glaucoma Prediction Mass Screening Tool
+
+## About:
+
+- Glaucoma Prediction Mass Screening Tool for detection and analysis of glaucoma using eye fundus and OCT images.
+
+## Webapp
+
+- A user-friendly web application built using Next/React and Flask, enabling users to upload fundus and OCT images
+- Automatic medical report generation based on the prediction results.
+
+#### Detection from Fundus Images:
+
+- Detection module for fundus images built using a U-Net architecture for precise optic disc segmentation followed by a VGG-19 classifier for classification
+
+#### Detection from OCT Images:
+
+- Detection module for OCT images built using a Siamese Neural Network with similarity comparison
 
 ## URL/Source for Dataset
 
